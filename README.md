@@ -14,7 +14,7 @@ Os parâmetros do motor utilizados neste projeto são:
   - Tensão Nominal - 220V;
   - Frequência Nominal - 60Hz
   - Coeficiente de atrito do rotor - 0.001N.m.s
-  - Momento de inercia do rotor - 0.0017kg.m^2$
+  - Momento de inercia do rotor - 0.0017kg.m^2
   - Par de polos - 2
   - Indutância de magnetização - 694,1mH
   - Indutância do estator - 718,5mH
@@ -38,7 +38,7 @@ Para se estimar o fluxo de estator no MIT faz-se o uso da equação:
 
 Para se estimar o fluxo de rotor no MIT faz-se o uso da equação:
 
-![Fluxo de rotor(https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fluxo_rotor_presente.PNG?raw=true)
+![Fluxo de rotor](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fluxo_rotor_presente.PNG?raw=true)
 
 # Predição dos parâmetros de operação do MIT
 O controlador preditivo de torque faz o uso dos valores previstos de Torque eletromagnético e Fluxo do Rotor ambos no instante (k + 1).
