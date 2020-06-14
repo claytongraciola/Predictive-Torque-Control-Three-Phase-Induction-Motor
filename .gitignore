@@ -1,0 +1,6 @@
+# exclude simulation data
+slprj/*
+.asv
+.slxc
+.fig
+.mat
