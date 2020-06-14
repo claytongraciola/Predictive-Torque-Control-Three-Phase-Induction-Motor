@@ -21,13 +21,10 @@ Os parâmetros do motor utilizados neste projeto são:
   - Indutância de magnetização - 694,1mH
   - Indutância do estator - 718,5mH
   - Indutância do rotor - 718,5mH
-<<<<<<< HEAD
   - Resistência do rotor - 7,5022 Ohms
   - Resistência do estator - 4,8319 Ohms
-=======
-  - Resistência do rotor - 7.5022 Ohms
-  - Resistência do estator - 4.8319 Ohms
->>>>>>> 1529af30ee3a04be8b00917e24aaa62e67fb5d85
+  - Resistência do rotor - 7,5022 Ohms
+  - Resistência do estator - 4,8319 Ohms
   - Fluxo magnético nominal do estator - 0,78Wb
   - Torque Nominal - 4,1N.m
   - Velocidade Nominal - 188,49rad/s
