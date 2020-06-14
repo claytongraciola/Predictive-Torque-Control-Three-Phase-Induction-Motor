@@ -6,7 +6,7 @@ As máquinas elétricas rotativas desempenham um papel fundamental na indústria
 Dentre os motores elétricos, o Motor de Indução Trifásico (MIT) é amplamente utilizado na indústria devido ao seu baixo custo, robustez e baixa necessidade de manutenção. Ainda, pode-se citar como outra vantagem a possibilidade de controlar sua velocidade quando acionado por um inversor de frequência, possibilitando sua aplicação em uma maior gama de processos.
 Diversas estratégias de controle podem ser aplicadas no MIT, neste repositório é discutido a proposta da aplicação do Controle Preditivo de Torque do inglês Predictive Torque Control (PTC) para o controle de velocidade.
 
-[IMAGEM FLUXO DOS DADOS]
+![Malha de Controle](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/malha_controle.JPG?raw=true)
 
 Os parâmetros do motor utilizados neste projeto são:
 
@@ -19,8 +19,8 @@ Os parâmetros do motor utilizados neste projeto são:
   - Indutância de magnetização - 694,1mH
   - Indutância do estator - 718,5mH
   - Indutância do rotor - 718,5mH
-  - Resistência do rotor - 7.5022 $\Omega$
-  - Resistência do estator - 4.8319 $\Omega$
+  - Resistência do rotor - 7.5022 Ohms
+  - Resistência do estator - 4.8319 Ohms
   - Fluxo magnético nominal do estator - 0.78Wb
   - Torque Nominal - 4.1N.m
   - Velocidade Nominal - 188,49rad/s
@@ -70,7 +70,6 @@ A determinação do fator de peso é dada pela relação entre o Torque nominal 
 
 Dado o calculo do custo para cada uma dos vetores de tensão e de chaveamento apresentados na tabela abaixo é determinado qual a posição das chaves por meio da função MIN onde a tensão que obtiver o menor custo é selecionado.
 
-´´´
 |   | Tensão                      | S1 | S2 | S3 |
 |---|-----------------------------|----|----|----|
 | 1 | 0                           | 0  | 0  | 0  |
@@ -81,7 +80,6 @@ Dado o calculo do custo para cada uma dos vetores de tensão e de chaveamento ap
 | 6 | (-1/3)Vdc - (jsqrt(3)/3)Vdc | 0  | 0  | 1  |
 | 7 | (1/3)Vdc - (jsqrt(3)/3)Vdc  | 1  | 0  | 1  |
 | 8 | 0                           | 1  | 1  | 1  |
-´´´
 
 # Projeto do controlador
 No controle preditivo de torque é utilizado um controlador cujo objetivo é fornecer uma referência de torque e com isso controlar a velocidade do MIT. Como a dinâmica elétrica do MIT é muito mais rápida que a dinâmica mecânica podemos simplificar o controlador por meio da função de transferência representada pela função de transferencia:
