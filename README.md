@@ -34,37 +34,35 @@ No MIT parâmetros como o fluxo de estator e o fluxo de rotor não podem ser med
 	
 Para se estimar o fluxo de estator no MIT faz-se o uso da equação:
 
-[fluxo_estator_presente]
+![Fluxo de estator](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fluxo_estator_presente.PNG?raw=true)
 
 Para se estimar o fluxo de rotor no MIT faz-se o uso da equação:
 
-[fluxo_rotor_presente]
-
+![Fluxo de rotor(https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fluxo_rotor_presente.PNG?raw=true)
 
 # Predição dos parâmetros de operação do MIT
 O controlador preditivo de torque faz o uso dos valores previstos de Torque eletromagnético e Fluxo do Rotor ambos no instante (k + 1).
 Para se estimar o fluxo do estator no MIT no instante (k + 1) faz-se o uso da equação:
 
-[fluxo_estator_futuro]
+![Fluxo de estator no futuro](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fluxo_estator_futuro.PNG?raw=true)
 
 Para se estimar o torque eletromagnético no MIT no instante (k + 1) faz-se o uso da equação:
 
-[torque_futuro]
+![Torque futuro](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/torque_futuro.PNG?raw=true)
 
 Para estimar a corrente de estator no futuro faz-se o uso da equação:
 
-[corrente_futuro]
+![Corrente futuro](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/corrente_futuro.png?raw=true)
 
 # Função de custo
 
 No controle preditivo de torque a tensão aplicada no MIT é determinada por meio da minimização de uma função de custo, a função de custo é dada pela equação:
 
-[opt_fun]
+![Função de custo](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/opt_fun.png?raw=true)
 
 A determinação do fator de peso é dada pela relação entre o Torque nominal do motor e o fluxo nominal de estator  apresentado na equação:
 
-
-[fator_de_peso]
+![Fator de Peso](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fator_de_peso.png?raw=true)
 
 # Determinação dos chaveamentos
 
@@ -84,23 +82,23 @@ Dado o calculo do custo para cada uma dos vetores de tensão e de chaveamento ap
 # Projeto do controlador
 No controle preditivo de torque é utilizado um controlador cujo objetivo é fornecer uma referência de torque e com isso controlar a velocidade do MIT. Como a dinâmica elétrica do MIT é muito mais rápida que a dinâmica mecânica podemos simplificar o controlador por meio da função de transferência representada pela função de transferencia:
 
-[TF]
+![Função de transferência](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/TF_rotor.png?raw=true)
 
 Temos um controlador na forma descrita abaixo, e posicionando o zero do controlador em 2 vezes a posição do polo da função de transferência temos:
 
-[CONTROLADOR]
+![Corrente futuro](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/controlador.png?raw=true)
 
 Considerando como parâmetro de projeto um máximo overshoot de 0% e um tempo de acomodação 1ms, temos que o polo dominante do sistema tem que estar alocado em -3912,0230. Portanto calculando o ganho K com base na função de transferência de malha aberta TFma = C(s) . TF_r(s) conforme abaixo:
 
-[CALCULO GANHO]
+![Calculo Ganho](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/calculo_ganho.png?raw=true)
 
 Sendo assim temos que o controlador em tempo contínuo e discretizado considerando Ts = 10us está representado abaixo:
 
-[CONTROLADOR]
+![Controlador Final](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/fim_controladores.png?raw=true)
 
 Por fim a equação de diferenças da função de transferência discretizada:
 
-[EQ DE DIFERENÇAS]
+![Equação de diferenças](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/equacao_de_diferencas.png?raw=true)
 
 
 # Testes implementados
@@ -117,61 +115,60 @@ A fim de avaliar a reposta do controlador foi desenvolvido 5 teste eles são:
 
 Teste de degrau de velocidade sem carga:
 
-[SIMULATION_A/VELOCIDADE_A]
-[SIMULATION_A/CARGA_A]
+![Velocidade Teste A/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/A_VELOCIDADE.png?raw=true)
+![Carga Teste A/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/A_CARGA.png?raw=true)
 
 Teste de degrau de velocidade com carga:
 
-[SIMULATION_A/VELOCIDADE_B]
-[SIMULATION_A/CARGA_B]
+![Velocidade Teste A/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/B_VELOCIDADE.png?raw=true)
+![Carga Teste A/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/B_CARGA.png?raw=true)
+
 
 Teste de velocidade constante com degrau de carga:
 
-[SIMULATION_A/VELOCIDADE_C]
-[SIMULATION_A/CARGA_C]
+![Velocidade Teste A/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/C_VELOCIDADE.png?raw=true)
+![Carga Teste A/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/C_CARGA.png?raw=true)
 
 Teste de velocidade baixa com carga
 
-[SIMULATION_A/VELOCIDADE_D]
-[SIMULATION_A/CARGA_D]
+![Velocidade Teste A/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/D_VELOCIDADE.png?raw=true)
+![Carga Teste A/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/D_CARGA.png?raw=true)
 
 Teste de rotor bloqueado com carga
 
-[SIMULATION_A/VELOCIDADE_E]
-[SIMULATION_A/CARGA_E]
+![Velocidade Teste A/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/E_VELOCIDADE.png?raw=true)
+![Carga Teste A/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/E_CARGA.png?raw=true)
 
 # Resultados Simulação real
 
 Teste de degrau de velocidade sem carga:
 
-[SIMULATION_B/VELOCIDADE_A]
-[SIMULATION_B/CARGA_A]
-[SIMULATION_B/CORRENTE_A]
+![Velocidade Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_VELOCIDADE.png?raw=true)
+![Carga Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_CARGA.png?raw=true)
+![Corrente Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_CORRENTE.png?raw=true)
 
 Teste de degrau de velocidade com carga:
 
-[SIMULATION_B/VELOCIDADE_B]
-[SIMULATION_B/CARGA_B]
-[SIMULATION_B/CORRENTE_B]
+![Velocidade Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_VELOCIDADE.png?raw=true)
+![Carga Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_CARGA.png?raw=true)
+![Corrente Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_CORRENTE.png?raw=true)
 
 Teste de velocidade constante com degrau de carga:
 
-[SIMULATION_B/VELOCIDADE_C]
-[SIMULATION_B/CARGA_C]
-[SIMULATION_B/CORRENTE_C]
+![Velocidade Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_VELOCIDADE.png?raw=true)
+![Carga Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_CARGA.png?raw=true)
+![Corrente Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_CORRENTE.png?raw=true)
 
 Teste de velocidade baixa com carga
 
-[SIMULATION_B/VELOCIDADE_D]
-[SIMULATION_B/CARGA_D]
-[SIMULATION_B/CORRENTE_D]
+![Velocidade Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_VELOCIDADE.png?raw=true)
+![Carga Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_CARGA.png?raw=true)
+![Corrente Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_CORRENTE.png?raw=true)
 
 Teste de rotor bloqueado com carga
-
-[SIMULATION_B/VELOCIDADE_E]
-[SIMULATION_B/CARGA_E]
-[SIMULATION_B/CORRENTE_E]
-
+![Velocidade Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_VELOCIDADE.png?raw=true)
+![Carga Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_CARGA.png?raw=true)
+![Corrente Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_CORRENTE.png?raw=true)
 
 
 
