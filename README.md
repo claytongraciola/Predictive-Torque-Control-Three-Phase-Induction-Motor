@@ -2,8 +2,10 @@
 Este repositório contem a implementação do controle preditivo de torque no Motor de Indução Trifásico (MIT) no ambiente computacional SIMULINK/MATLAB, neste readme.md esta descrito o calculo do controlador utilizado para fornecer a referência de torque ao inversor de frequência
 
 # Introdução
-As máquinas elétricas rotativas desempenham um papel fundamental na indústria moderna atuando na conversão eletromecânica de energia. O motor elétrico está presente em diversos equipamentos tais como compressores, esteiras, tornos, dentre outros. Sua importância consiste no fato de consumir de 44\% à 46\% de toda energia elétrica produzida no âmbito mundial. 
+As máquinas elétricas rotativas desempenham um papel fundamental na indústria moderna atuando na conversão eletromecânica de energia. O motor elétrico está presente em diversos equipamentos tais como compressores, esteiras, tornos, dentre outros. Sua importância consiste no fato de consumir de 44\% à 46\% de toda energia elétrica produzida no âmbito mundial.
+
 Dentre os motores elétricos, o Motor de Indução Trifásico (MIT) é amplamente utilizado na indústria devido ao seu baixo custo, robustez e baixa necessidade de manutenção. Ainda, pode-se citar como outra vantagem a possibilidade de controlar sua velocidade quando acionado por um inversor de frequência, possibilitando sua aplicação em uma maior gama de processos.
+
 Diversas estratégias de controle podem ser aplicadas no MIT, neste repositório é discutido a proposta da aplicação do Controle Preditivo de Torque do inglês Predictive Torque Control (PTC) para o controle de velocidade.
 
 ![Malha de Controle](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/README/malha_controle.JPG?raw=true)
