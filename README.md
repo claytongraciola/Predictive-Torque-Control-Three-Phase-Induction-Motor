@@ -115,60 +115,60 @@ A fim de avaliar a reposta do controlador foi desenvolvido 5 teste eles são:
 
 Teste de degrau de velocidade sem carga:
 
-![Velocidade Teste A/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/A_VELOCIDADE.png?raw=true)
+![Velocidade Teste A/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/A_VELOCIDADES.png?raw=true)
 ![Carga Teste A/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/A_CARGA.png?raw=true)
 
 Teste de degrau de velocidade com carga:
 
-![Velocidade Teste A/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/B_VELOCIDADE.png?raw=true)
+![Velocidade Teste A/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/B_VELOCIDADES.png?raw=true)
 ![Carga Teste A/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/B_CARGA.png?raw=true)
 
 
 Teste de velocidade constante com degrau de carga:
 
-![Velocidade Teste A/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/C_VELOCIDADE.png?raw=true)
+![Velocidade Teste A/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/C_VELOCIDADES.png?raw=true)
 ![Carga Teste A/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/C_CARGA.png?raw=true)
 
 Teste de velocidade baixa com carga
 
-![Velocidade Teste A/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/D_VELOCIDADE.png?raw=true)
+![Velocidade Teste A/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/D_VELOCIDADES.png?raw=true)
 ![Carga Teste A/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/D_CARGA.png?raw=true)
 
 Teste de rotor bloqueado com carga
 
-![Velocidade Teste A/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/E_VELOCIDADE.png?raw=true)
+![Velocidade Teste A/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/E_VELOCIDADES.png?raw=true)
 ![Carga Teste A/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_A/RESPOSTA/PNG/E_CARGA.png?raw=true)
 
 # Resultados Simulação real
 
 Teste de degrau de velocidade sem carga:
 
-![Velocidade Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_VELOCIDADE.png?raw=true)
+![Velocidade Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_VELOCIDADES.png?raw=true)
 ![Carga Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_CARGA.png?raw=true)
-![Corrente Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_CORRENTE.png?raw=true)
+![Corrente Teste B/A](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/A_CORRENTES.png?raw=true)
 
 Teste de degrau de velocidade com carga:
 
-![Velocidade Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_VELOCIDADE.png?raw=true)
+![Velocidade Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_VELOCIDADES.png?raw=true)
 ![Carga Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_CARGA.png?raw=true)
-![Corrente Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_CORRENTE.png?raw=true)
+![Corrente Teste B/B](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/B_CORRENTES.png?raw=true)
 
 Teste de velocidade constante com degrau de carga:
 
-![Velocidade Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_VELOCIDADE.png?raw=true)
+![Velocidade Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_VELOCIDADES.png?raw=true)
 ![Carga Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_CARGA.png?raw=true)
-![Corrente Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_CORRENTE.png?raw=true)
+![Corrente Teste B/C](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/C_CORRENTES.png?raw=true)
 
 Teste de velocidade baixa com carga
 
-![Velocidade Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_VELOCIDADE.png?raw=true)
+![Velocidade Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_VELOCIDADES.png?raw=true)
 ![Carga Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_CARGA.png?raw=true)
-![Corrente Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_CORRENTE.png?raw=true)
+![Corrente Teste B/D](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/D_CORRENTES.png?raw=true)
 
 Teste de rotor bloqueado com carga
-![Velocidade Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_VELOCIDADE.png?raw=true)
+![Velocidade Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_VELOCIDADES.png?raw=true)
 ![Carga Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_CARGA.png?raw=true)
-![Corrente Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_CORRENTE.png?raw=true)
+![Corrente Teste B/E](https://github.com/eduardoanog/Predictive-Torque-Control-Three-Phase-Induction-Motor/blob/master/IMAGES/SIMULATION_B/RESPOSTA/PNG/E_CORRENTES.png?raw=true)
 
 
 
