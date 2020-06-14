@@ -15,16 +15,16 @@ Os parâmetros do motor utilizados neste projeto são:
   - Potência Nominal - 746VA;
   - Tensão Nominal - 220V;
   - Frequência Nominal - 60Hz
-  - Coeficiente de atrito do rotor - 0.001N.m.s
-  - Momento de inercia do rotor - 0.0017kg.m^2
+  - Coeficiente de atrito do rotor - 0,001N.m.s
+  - Momento de inercia do rotor - 0,0017kg.m^2
   - Par de polos - 2
   - Indutância de magnetização - 694,1mH
   - Indutância do estator - 718,5mH
   - Indutância do rotor - 718,5mH
   - Resistência do rotor - 7.5022 Ohms
   - Resistência do estator - 4.8319 Ohms
-  - Fluxo magnético nominal do estator - 0.78Wb
-  - Torque Nominal - 4.1N.m
+  - Fluxo magnético nominal do estator - 0,78Wb
+  - Torque Nominal - 4,1N.m
   - Velocidade Nominal - 188,49rad/s
 
 # Controle preditivo de torque
